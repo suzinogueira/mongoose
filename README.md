@@ -11,6 +11,6 @@
 ![tela_edit](https://user-images.githubusercontent.com/12518149/139068857-7553f551-0e1c-4ec4-a6c9-cb1b20ecbd4b.png)
 
 ### Testando o redirecionamento: ('/:"titulo-redirecionamento"')
-https://user-images.githubusercontent.com/12518149/139078956-2bf0a5a5-ac07-414c-bece-2c1184495c3d.mp4
+https://user-images.githubusercontent.com/12518149/139079990-e5337dc1-e64d-4dd5-a6dc-6de9df7cf126.mp4
 
 ###### Obs: esse projeto faz parte do estudo do curso Programador BR do Igor Oliveira
