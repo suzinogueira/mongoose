@@ -1,22 +1,23 @@
-const express = require('express');
-const app = express();
-const port = 3000;
-const mongoose = require('mongoose');
-const linkRoute = require('./routes/linkRoute');
+const express = require('express')
+const app = express()
+const port = 3000
+const mongoose = require('mongoose')
+const path = require('path')
+const linkRoute = require('./routes/linkRoute')
 
-mongoose.connect('mongodb://localhost/links');
+mongoose.connect('mongodb://localhost/links')
 
-let db = mongoose.connection;
+let db = mongoose.connection
 
-db.on("error", () => console.log("Houve um erro"));
-db.once("open", () => {
-    console.log("Banco carregado");
+db.on('error', () => console.log('Houve um erro'))
+db.once('open', () => {
+  console.log('Banco carregado')
+})
 
-});
-
-app.use('/', linkRoute);
-app.listen(port, () => console.log(`example on port ${port}!`));
-
+app.use('/', linkRoute)
+app.listen(port, () => console.log(`example on port ${port}!`))
+app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'templates'))
 
 //formas de conectar
 // mongoose.connect('mongodb://localhost/links', (error, db) => {
@@ -29,7 +30,6 @@ app.listen(port, () => console.log(`example on port ${port}!`));
 // }).catch(error =>{
 //     console.log(error)
 // })
-
 
 // let link = new Link({
 //     title:"twitter",
